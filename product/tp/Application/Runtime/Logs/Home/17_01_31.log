@@ -1,0 +1,1151 @@
+[ 2017-01-31T10:20:13+08:00 ] ::1 /product/tp/index.php/Home/New/knowledge.html?cart_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: 
+			SELECT * from `cart` INNER JOIN `blog` on cart.cart_id=blog.cart_id where cart.cart_id in (SELECT cart_id from `cart` where parent_id=2 or cart_id=2) [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE ( cart_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T10:21:18+08:00 ] ::1 /product/tp/index.php/Home/New/knowledge.html?cart_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: 
+			SELECT * from `cart` INNER JOIN `blog` on cart.cart_id=blog.cart_id where cart.cart_id in (SELECT cart_id from `cart` where parent_id=2 or cart_id=2) [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE ( cart_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-31T10:21:33+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=1 [ RunTime:0.0010s ]
+SQL: SELECT cart_name FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-31T10:22:20+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=1 [ RunTime:0.0010s ]
+SQL: SELECT cart_name FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T10:23:04+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=1 [ RunTime:0.0010s ]
+SQL: SELECT cart_name FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-31T10:26:06+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=1 [ RunTime:0.0010s ]
+SQL: SELECT cart_name FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T10:33:49+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=1 [ RunTime:0.0010s ]
+SQL: SELECT cart_name,cart_id FROM cart where (cart_id=(select cart_id from blog where blog_id=1)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T10:34:38+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT cart_name,cart_id FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T10:35:17+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+
+[ 2017-01-31T10:41:49+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 38 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['cart_id']' at line 1
+
+[ 2017-01-31T10:44:11+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 38 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['parent_id']' at line 1
+
+[ 2017-01-31T13:27:03+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T13:27:57+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0020s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 38 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['parent_id']' at line 1
+
+[ 2017-01-31T13:29:10+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 38 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['parent_id']' at line 1
+
+[ 2017-01-31T13:29:43+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+
+[ 2017-01-31T13:30:14+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 38 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['parent_id']' at line 1
+
+[ 2017-01-31T13:32:22+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+
+[ 2017-01-31T13:34:21+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T13:35:46+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T13:37:21+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=2 [ RunTime:0.0000s ]
+
+[ 2017-01-31T13:39:04+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+
+[ 2017-01-31T13:39:11+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+
+[ 2017-01-31T13:39:14+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+
+[ 2017-01-31T13:39:58+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:14:41+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: Model D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 47 行.
+
+[ 2017-01-31T14:14:47+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: Model D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 47 行.
+
+[ 2017-01-31T14:15:54+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:15:57+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:18:50+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:19:52+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:20:45+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:23:58+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:24:03+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0020s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:25:29+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:25:58+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:26:00+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:27:28+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:31:27+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:32:25+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:32:27+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:33:49+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:35:15+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:36:54+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:36:59+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:37:45+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:37:47+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:38:38+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:38:40+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:41:44+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T14:41:48+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T14:42:17+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T14:42:37+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:43:46+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:44:15+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:44:16+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:45:01+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:45:03+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:46:01+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:46:03+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 44 行.
+
+[ 2017-01-31T14:46:36+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:47:14+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:48:04+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:48:07+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0010s ]
+
+[ 2017-01-31T14:48:22+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cartParent D:\phpStudy\WWW\product\tp\Application\Home\Model\BlogModel.class.php 第 54 行.
+
+[ 2017-01-31T14:49:08+08:00 ] ::1 /product/tp/index.php/Home/New/index.html?blog_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SELECT * from `blog` INNER JOIN `cart` on cart.cart_id=blog.cart_id WHERE blog_id=2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where (cart_id=(select cart_id from blog where blog_id=2)) [ RunTime:0.0000s ]
+SQL: SELECT * FROM cart where cart_id=6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM cart where cart_id=3 [ RunTime:0.0000s ]
+
+[ 2017-01-31T14:56:19+08:00 ] ::1 /product/tp/index.php/Home/New/knowledge.html?cart_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: 
+			SELECT * from `cart` INNER JOIN `blog` on cart.cart_id=blog.cart_id where cart.cart_id in (SELECT cart_id from `cart` where parent_id=2 or cart_id=2) [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE ( cart_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-31T14:56:50+08:00 ] ::1 /product/tp/index.php/Home/New/knowledge.html?cart_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cart` WHERE ( parent_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0070s ]
+SQL: 
+			SELECT * from `cart` INNER JOIN `blog` on cart.cart_id=blog.cart_id where cart.cart_id in (SELECT cart_id from `cart` where parent_id=13 or cart_id=13) [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE ( cart_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY update_time desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SELECT `blog_id`,`title` FROM `blog` ORDER BY num desc LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,5 @@
+<ul class="paih">
+<foreach name="hotBlog" item="hot">
+      <li><a href="{:U('New/index')}?blog_id={$new.blog_id}" title="{$hot.title}" target="_blank">{$hot.title}</a></li>
+  </foreach>   
+    </ul>

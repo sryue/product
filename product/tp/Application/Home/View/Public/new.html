@@ -1,0 +1,5 @@
+<ul class="rank">
+<foreach name="newBlog" item="new">
+      <li><a href="{:U('New/index')}?blog_id={$new.blog_id}" title="{$new.title}" target="_blank">{$new.title}</a></li>
+      </foreach>
+    </ul>

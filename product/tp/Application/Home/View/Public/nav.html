@@ -1,0 +1,8 @@
+<div id="logo"><a href="/"></a></div>
+  <nav class="topnav" id="topnav">
+  <a href="{:U('Index/index')}"><span>首页</span><span class="en">Protal</span></a>
+  <foreach name="cartList" item="vo">
+  <a href="{:U('New/knowledge')}?cart_id={$vo.cart_id}"><span>{$vo.cart_name}</span><span class="en">{$vo.cart_name}</span></a>
+  </foreach>
+  </nav>
+  </nav>
